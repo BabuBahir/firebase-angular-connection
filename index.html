@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Firebase </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>	 
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+	apiKey: "AIzaSyAmBPwBtsrCujz0Ok0BmYvZqZh3a7A_8LQ",
+	authDomain: "test-55ef7.firebaseapp.com",
+	databaseURL: "https://test-55ef7.firebaseio.com",
+	storageBucket: "test-55ef7.appspot.com",
+	messagingSenderId: "642795918231"
+	};
+	firebase.initializeApp(config);
+	</script>
+	<script src="app.js"></script>
+</head>
+	<body ng-app="test">
+		<div ng-controller="testCtrl">
+			{{name.first}}
+		</div>
+	</body>
+</html>
+
